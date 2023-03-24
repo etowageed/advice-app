@@ -3,8 +3,8 @@
     class="w-11/12 h-2/4 md:w-2/6 bg-DarkGrayishBlue shadow-2xl mx-auto rounded-lg p-5 mt-24 md:mt-0 flex flex-col justify-between">
 
     <div class=" text-center">
-      <span class="text-xs text-NeonGreen">
-        ADVICE #{{ adviceID }}</span>
+      <h1 class="text-xs text-NeonGreen">
+        ADVICE #{{ adviceID }}</h1>
     </div>
 
     <div class="w-11/12 text-center  mx-auto">
@@ -28,7 +28,7 @@
 
     </div>
     <div>
-      <button
+      <button aria-label="next advice" role="button"
         class="w-14 h-14 bg-NeonGreen rounded-full hover:bg-[#befcdd] flex items-center md:absolute md:bottom-32 md:right-[48%] md:left-[48%] mx-auto"
         @click="reloadPage()">
         <svg class="mx-auto hover:rotate-45" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
@@ -56,7 +56,7 @@ export default {
       fetch("https://api.adviceslip.com/advice")
         .then((response) => response.json())
         .then((data) => {
-          console.log(data);
+          // console.log(data);
           this.adviceID = data.slip.id;
           this.adviceSlip = data.slip.advice;
         })
