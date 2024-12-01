@@ -7,8 +7,8 @@
         ADVICE #{{ adviceID }}</h1>
     </div>
 
-    <div class="w-11/12 text-center  mx-auto">
-      <p class="text-5xl text-LightCyan textFont font-extrabold">
+    <div class="w-11/12 text-center  mx-auto my-3">
+      <p class=" text-4xl md:text-5xl text-LightCyan textFont font-extrabold">
         "{{ adviceSlip }}"
       </p>
     </div>
