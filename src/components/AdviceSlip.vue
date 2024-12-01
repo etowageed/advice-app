@@ -8,7 +8,7 @@
     </div>
 
     <div class="w-11/12 text-center  mx-auto">
-      <p class="text-lg text-LightCyan textFont font-extrabold">
+      <p class="text-5xl text-LightCyan textFont font-extrabold">
         "{{ adviceSlip }}"
       </p>
     </div>
